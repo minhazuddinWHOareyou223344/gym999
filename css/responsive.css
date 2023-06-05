@@ -1,0 +1,174 @@
+@media (min-width: 320px) and (max-width: 575px){
+    #baner .banerslider .slider{
+        padding: 0px 30px;
+        
+    }
+    #gold .goldus img{
+        display: inline-block;
+        margin: auto; 
+       margin-left: 120px;
+    }
+    #about .aboutimg img{
+        display: inline-block;
+        width: 100%;
+
+    }
+    #about .aboutus img{
+        display: inline-block;
+        margin: auto; 
+        margin-left: 120px;
+    }
+    #about  p{
+        padding: 0px 30px;
+    }
+    #gold{
+        background-image: url(../img/gallery-img-bg.jpg);
+        height: 2200px;
+        padding: 50px 0px;
+        background-position: center;
+        background-size: cover;
+         background-repeat: no-repeat;
+       width: 100%;
+        
+    }
+    #gold .goldimg img{
+        width: 100%;
+    }
+    #gold .goldimg:hover  .overlay{
+        display: none;
+    }
+    #teamx .teamus img{
+        display: inline-block;
+        margin: auto; 
+        margin-left: 120px;
+       
+    }
+    #team .teamimg{
+        margin: auto;
+    }
+    #testimonialx .testimonialus img{
+        display: inline-block;
+        margin: auto; 
+        margin-left: 120px;
+       
+    }
+    #memberx .memberus img{
+        display: inline-block;
+        margin: auto; 
+        margin-left: 120px;  
+    }
+    #number{
+        
+        background-image: url(../img/number-img-bg.jpg);
+        height: 680px;
+        background-position: center;
+        background-size: cover;
+         background-repeat: no-repeat;
+         color: rgb(232, 228, 228);
+         
+    }
+    #number .numbertext  span{
+        text-align: center;
+     
+        display: inline-block;
+        margin-left: 150px;
+    }
+    #number .numbertext h5{
+        display: inline-block;
+        margin-left: 150px; 
+    }
+    #our .ourus img{
+        display: inline-block;
+        margin-left: 120px; 
+    }
+    #our .ourbutton .ourb{
+     margin-left: 110px;
+    }
+    #our .ourimg {
+        display: inline-block;
+        margin: auto;
+  margin-left: auto;
+        
+    }
+    #our .ourimg .tuesday{
+        width: 300px;
+       
+    }
+    #our .ourimg .monday{
+        width: 300px;
+       
+    }
+    #our .ourimg .wednesday{
+        width: 300px;
+       
+    }
+    #our .ourimg .thursday{
+        width: 300px;
+       
+    }
+    #plan .planslider .planimg img{
+        left: 100px;
+        display: inline-block;
+
+    }
+    #footer .footerus img{
+        display: inline-block;
+        margin: auto; 
+        margin-left: 120px; 
+    }
+    #footer{
+ 
+        background-image: url(../img/footar-bg-img.jpg);
+        height: 600px;
+        background-position: center;
+        background-size: cover;
+         background-repeat: no-repeat;
+         color: rgb(247, 238, 238);
+        margin-top: 80px;
+        }
+        #footer .footerfour{
+          
+        background-image: url(../img/footar-bg-img.jpg);
+        height: 600px;
+        background-position: center;
+        background-size: cover;
+         background-repeat: no-repeat;
+         color: rgb(247, 238, 238);
+        margin-top: 20px;  
+        text-align: center;
+        padding: 0px 40px;
+        }
+        #footer .footertwo{
+            background-image: url(../img/footar-bg-img.jpg);
+            height: 400px;
+            background-position: center;
+            background-size: cover;
+             background-repeat: no-repeat;
+             color: rgb(247, 238, 238);
+            margin-top: 80px; 
+            position: 0px 40px;
+            text-align: center;
+         
+        }
+        #footer .footerone ul li p .footeronex{
+            text-align: center;
+            margin-left: 200px;
+
+        }
+        #footer .footerone ul li p .footeronexx{
+            text-align: center;
+            margin-left: 200px;
+           
+        }
+        #footer .footerone h5{
+            text-align: center;
+        }
+        #our .ourbutton {
+            padding-left: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        nav.myNav {
+            height: 120px;
+          } 
+}

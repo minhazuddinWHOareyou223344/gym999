@@ -1,0 +1,862 @@
+
+/* -----------------------------------------------------------
+Them name : HUNT | Html teamplate 
+Autor : Minhaz uddin 
+Author Ulr : -------------
+Version:1.0
+
+-----------------------------------------------------------------------------
+
+
+*/
+/* --------------------------------------------------------------------------
+
+
+1  header
+2  about
+3  fortfolio
+4  services
+5  
+6  
+7
+8
+9
+10
+11
+12
+13
+
+
+---------------------------------------------------------------------------------
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+ list-style: none;
+}
+:root{
+    --primarycolor:#0f0f0f;
+    --secondarycouler:#e23e38;
+     --threecouler:#ffffff;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    font-size: 14px;
+    font-weight:200;
+    overflow-x: hidden;
+    font-family: 'Oswald', sans-serif;
+    color: var(--primarycolor);
+
+}
+/* header section start hear */
+nav.menuFixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+   z-index: 8;
+   transform: translateY(-100%);
+   animation-name: menuFixed;
+   animation-duration: 0.47s;
+   animation-timing-function: ease-in;
+   animation-fill-mode: forwards;
+  }
+  
+  @keyframes menuFixed {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .navbar{
+    width: 100%;
+    height: 100px;
+  }
+header  .banerslider {
+   height: 600px; 
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#navber .nav-item a{
+    font-size: 14px ;
+    font-weight: 200;
+    color: white;
+
+ 
+ }
+#navber .nav-item:hover{
+    background-color: var(--threecouler);
+   color: #0f0f0f !important;
+}
+#navber .nav-item a:hover{
+
+   color: #0f0f0f !important;
+}
+#navber .nav-item a::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #e23e38;
+    position: absolute;
+   bottom: 0;
+    left: 0;
+    transform: scale(0);
+    transition: 0.3s;
+}
+#navber {
+    position: relative;
+}
+#navber .nav-item:hover  ::before{
+    transform: scale(1.2);
+    width: 50px;
+}
+
+header .slider a:hover{
+    background-color: var(--secondarycouler);
+    border: none !important;
+}
+header .sliderbox .row{
+    height: 600px;
+}
+#baner .banerslider .row{
+    height: 600px;
+    justify-content: center;
+
+
+}
+#baner .banerslider .slider{
+    margin: auto;
+    width: 500px;
+    margin-bottom: 130px;
+  
+
+}
+
+header #baner .slider h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--threecouler);
+    text-align: center;
+    text-align: center;
+}
+header #baner .slider h1{
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--secondarycouler);
+    letter-spacing: 10px;
+    text-align: center;
+}
+header #baner .slider p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--threecouler);
+    text-align: center;
+    
+ 
+}
+header #baner .slider a{
+    width: 100px;
+    height: 30px;
+   border: 1px solid var(--threecouler);
+   display: inline-block;
+   color: var(--threecouler);
+   line-height: 30px;
+   text-align: center;
+   margin-left: 20px;
+   font-size: 16px;
+  text-align: center;
+  margin-left: 100px;
+ 
+}
+#navber  .smallmanu{
+   
+    text-align: center;
+
+}
+#baner .slick-dots{
+    text-align: center;
+
+}
+#baner .slick-dots li{
+   display: inline-block;
+  margin: 0px 10px;
+  
+  
+}
+#baner .slick-dots li button{
+    color: transparent;
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 50%;
+    border: none;
+    border: 1px solid var(--primarycolor);
+
+}
+#baner .slick-dots li.slick-active button{
+background-color: var(--secondarycouler);
+}
+
+
+/* hearder section end hear  */
+/* about section start hear */
+#about{
+    padding: 100px 0px;
+}
+#about  h3{
+text-align: center;
+font-size: 22px;
+
+}
+#about .aboutus img{
+    display: inline-block;
+    margin: auto;
+    margin-left: 250px;
+   margin-bottom: 20px;
+}
+#about  p{
+    font-size: 17px;
+    text-align: center;
+    
+    
+}
+
+/* about section end hear */
+/* gallery section start hear */
+#gold{
+    background-image: url(../img/gallery-img-bg.jpg);
+    height: 750px;
+    padding: 50px 0px;
+    background-position: center;
+    background-size: cover;
+     background-repeat: no-repeat;
+   
+    
+}
+#gold h3{
+    font-size: 22px;
+    text-align: center;
+    margin-top: -120px;
+}
+#gold .goldus img{
+    display: inline-block;
+    margin-left: 585px;
+}
+#gold .goldimg {
+    position: relative;
+}
+#gold .goldimg img{
+    display: inline-block;
+    width: 400px;
+    height: 370px;
+   
+    padding: 30px 30px;
+}
+#gold .goldimg .overlay a{
+    display: inline-block;
+    font-size: 22px;
+    color: var(--threecouler);
+}
+#gold .goldimg .overlay {
+    position: absolute;
+  bottom: 50px;
+  left: 70px;
+  top: 50px;
+  right: 30px;
+
+
+
+ background-color: #e23e3896;
+  width:300px;
+height: 280px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  transition: 0.3s;
+  transform-origin: bottom;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+   transition: 500ms;
+}
+#gold .goldimg:hover  .overlay{
+    opacity: 1;
+    visibility: visible;
+    transition: 500ms;
+}
+
+/* gallery sectiom nend */
+/* team section start hear  */
+#team{
+    padding: 80px 0px;
+    position: relative;
+}
+#team h3{
+    text-align: center;
+    font-size: 22px;
+}
+#team .teamus img{
+    display: inline-block;
+    margin-left: 585px;
+}
+#team .teamimg{
+    width: 350px;
+    height: 500px;
+   margin-top: 20px;
+   position: relative;
+}
+#team .teamimg img{
+    display: inline-block;
+    width: 100%;
+}
+#team .teamtext h5{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+}
+#team .teamtext h6{
+    text-align: center;
+    font-size: 20px;
+}
+#team .teamtext p{
+    font-size: 16px;
+    text-align: justify;
+    padding: 10px 15px;
+    text-align: center;
+}
+#team .teamtext{
+    background-color: var(--threecouler);
+    width: 100%;
+    
+}
+#team .teamimg .teamoverlay{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    top: 10px;
+    right: 25px;
+ 
+  
+  
+   background-color: #e23e3896;
+    width:300px;
+  height: 290px;
+    text-align: right;
+    display: flex;
+    
+    justify-content: right;
+    
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: bottom;
+    z-index: 2;
+   
+    transition: 500ms;
+     transition: 500ms;
+}
+#team .teamimg:hover .teamoverlay{
+    opacity: 1;
+    visibility: visible;
+    transition: 500ms;
+}
+#team .teamimg .teamoverlay ul  {
+   display: inline-block;
+margin-top:100px;
+margin-right: 10px;
+}
+#team .teamimg .teamoverlay ul li span{
+    display: inline-block;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid var(--threecouler);
+    color: var(--threecouler);
+}
+#team .teamimg .teamoverlay ul span:hover{
+    background-color: var(--threecouler);
+    color: #1da0f2;
+}
+#teamx{
+    margin-top: 50px;
+}
+#teamx h3{
+    text-align: center;
+    margin: auto;
+}
+#teamx .teamus img{
+    display: inline-block;
+    margin-left: 585px;
+}
+/* team section end hear  */
+/* testimonial section start hear  */
+#testimonialx {
+    margin-top: 30px;
+}
+#testimonialx h3{
+    font-size: 22px;
+   text-align: center;
+}
+#testimonialx .testimonialus img{
+    display: inline-block;
+    margin-left: 585px;
+}
+#testimonial{
+    background-image: url(../img/testimonial-bg-img.jpg);
+    height: 300px;
+    padding: 50px 0px;
+    background-position: center;
+    background-size: cover;
+     background-repeat: no-repeat;
+     color: white;
+     margin: 30px 0px;
+     margin-bottom: 50px;
+}
+
+#testimonial .testimonialimg .testtext h5,h6{
+   font-size: 22px;
+}
+#testimonial .testimonialimg{
+    width: 580px;
+    margin-left: 120px;
+}
+#testimonial .testimonialimg p{
+    font-size: 15px;
+    text-align: justify;
+    width: 600px;
+}
+#testimonial .testimonialimg .testtext .testx {
+    font-size: 16px;
+    color: var(--secondarycouler);
+}
+#testimonial .slick-dots{
+    text-align: center;
+
+}
+#testimonial .slick-dots li{
+   display: inline-block;
+  margin: 0px 10px;
+  
+  
+}
+#testimonial .slick-dots li button{
+    color: transparent;
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 50%;
+    border: none;
+    border: 1px solid var(--primarycolor);
+
+}
+#testimonial .slick-dots li.slick-active button{
+background-color: var(--secondarycouler);
+}
+/* testimonal section end hear */
+/* memberships sectioon start hear */
+#memberx h3{
+    font-size: 22px;
+    text-align: center;
+}
+#memberx .memberus img{
+    display: inline-block;
+    margin-left: 585px;
+}
+#member{
+    padding: 50px 0px;
+}
+#member .memberimg{
+    width: 350px;
+    height: 450px;
+    background-color: #dddd;
+}
+#member .memberimg h3{
+    font-size: 18px;
+    text-align: center;
+    width: 350px;
+    margin-left: -10px;
+height: 50px;
+line-height: 50px;
+}
+#member .memberimg:hover h3{
+    background-color: var(--secondarycouler);
+    color: var(--threecouler);
+    height: 50px;
+    transition: 500ms;
+}
+#member .memberimg .membertext img{
+width: 400px;
+   display: block;
+
+}
+#member .memberimg .membertext{
+  width: 350px;
+  position: relative;
+  margin-left: -10px;
+  height: 120px;
+}
+#member .memberimg .membertext h2{
+    position: absolute;
+    top: 30px;
+    color: var(--threecouler);
+    font-size: 50px;
+    text-align: center;
+   line-height: 50px;
+ left: 50px;
+}
+#member .memberimg ul li{
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 16px;
+
+}
+#member .memberimg .memberp p{
+    text-align: center;
+    font-size: 22px;
+    width: 350px;
+    margin-left: -10px;
+}
+#member .memberimg:hover p{
+    background-color: var(--secondarycouler);
+    color: var(--threecouler);
+
+    transition: 500ms;
+}
+/* membershiph section  end hear */
+/* number section start hear */
+#number{
+    padding: 80px 0px;
+    background-image: url(../img/number-img-bg.jpg);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+     background-repeat: no-repeat;
+     color: rgb(247, 238, 238);
+     margin: 80px 0px;
+}
+#number .numbertext  span{
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+    text-align: center;
+}
+#number .numbertext h5{
+    font-size: 16px;
+   
+}
+/* number section end hear */
+/* our section start hear  */
+#our{
+    padding: 80px 0px;
+}
+#our h3{
+    text-align: center;
+    font-size: 22px;
+}
+#our .ourus img{
+    display: inline-block;
+    margin-left: 585px;
+}
+#our .ourbutton {
+
+   background-color: #dddd;
+
+}
+#our .ourbutton .ourb{
+    padding:25px 70px;
+}
+#our .ourbutton .ourb {
+    border: none;
+    background-color: #dddd;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+#our .ourbutton .ourb:hover{
+    background-color: var(--secondarycouler);
+    color: var(--threecouler);
+}
+#our .ourimg .monday{
+    width: 200px;
+    height: 200px;
+    background-color: #dddd;
+   margin: 10px;
+   cursor: pointer;
+
+}
+#our .ourimg .monday h6{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+#our .ourimg .monday  span{
+text-align: center;
+font-size: 30px;
+margin-top: 10px;
+display: inline-block;
+margin-left: 75px;
+
+}
+#our .ourimg .monday p{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+#our .ourimg .monday:hover{
+    background-color: var(--secondarycouler);
+    color: var(--threecouler);
+}
+#our .ourimg .tuesday{
+    width: 200px;
+    height: 200px;
+    background-color: #dddd;
+    margin: 10px;
+    cursor: pointer;
+}
+#our .ourimg .tuesday h6{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+#our .ourimg .tuesday  span{
+text-align: center;
+font-size: 30px;
+margin-top: 10px;
+display: inline-block;
+margin-left: 75px;
+
+}
+#our .ourimg .tuesday p{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+#our .ourimg .tuesday:hover{
+    background-color: var(--secondarycouler);
+    color: var(--threecouler);
+}
+#our .ourimg .wednesday{
+    width: 200px;
+    height: 200px;
+    background-color: #dddd;
+    margin: 10px;
+    cursor: pointer;
+}
+#our .ourimg .wednesday h6{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+#our .ourimg .wednesday  span{
+text-align: center;
+font-size: 30px;
+margin-top: 10px;
+display: inline-block;
+margin-left: 75px;
+
+}
+#our .ourimg .wednesday p{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+#our .ourimg .wednesday:hover{
+    background-color: var(--secondarycouler);
+    color: var(--threecouler);
+}
+
+#our .ourimg .thursday{
+    width: 200px;
+    height: 200px;
+    background-color: #dddd;
+    margin: 10px;
+    cursor: pointer;
+}
+#our .ourimg .thursday h6{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+#our .ourimg .thursday  span{
+text-align: center;
+font-size: 30px;
+margin-top: 10px;
+display: inline-block;
+margin-left: 75px;
+
+}
+#our .ourimg .thursday p{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+#our .ourimg .thursday:hover{
+    background-color: var(--secondarycouler);
+    color: var(--threecouler);
+}
+
+/* our section end hear */
+/* plan section start hear */
+#plan .planslider .planimg {
+    width:200px;
+    display: inline-block;
+    cursor: pointer;
+}
+#plan{
+    padding: 30px 0px;
+}
+#plans{
+    position: relative;
+}
+#plans .arrows  span.laftarrows{
+    font-size: 25px;
+    position: absolute;
+    top: 65px;
+    left: -30px;
+cursor: pointer;
+}
+#plans .arrows  span.laftarrows:hover{
+    color: var(--secondarycouler);
+    transition: 500ms;
+}
+#plans .arrows  span.rightarrows:hover{
+    color: var(--secondarycouler);
+    transition: 500ms;
+}
+#plans .arrows  span.rightarrows{
+    font-size: 25px;
+    position: absolute;
+   top: 0px;
+  right: -30px;
+  top: 65px;
+  cursor: pointer;
+}
+/* plan section end hear */
+
+/* footer section start hear */
+#footer{
+ 
+background-image: url(../img/footar-bg-img.jpg);
+height: 600px;
+background-position: center;
+background-size: cover;
+ background-repeat: no-repeat;
+ color: rgb(247, 238, 238);
+margin-top: 80px;
+}
+#footer .footerus img{
+display: inline-block;
+margin-left: 585px;
+padding: 50px 0px;
+}
+#footer .footerone h5{
+    font-size: 16px;
+    padding: 30px 0px;
+    
+}
+#footer .footerone ul li p{
+ font-size: 14px;
+ text-align: center;
+ text-align: justify;
+padding: 0px !important;
+margin: 0px !important;
+}
+#footer .footerone ul li p .footeronex{
+    margin-left: 50px;
+   
+
+}
+#footer .footerone ul li p .footeronexx{
+    margin-left: 150px;
+    text-align: justify;
+
+}
+#footer .footerx{
+   border-top: 1px solid white;
+   border-bottom: 1px solid white;
+}
+#footer .footertwo h5{
+    font-size: 16px;
+    padding: 30px 0px;
+}
+#footer .footertwo .footertwox img {
+    display: inline-block;
+    left: 30px;
+    width: 40px;
+   
+
+}
+#footer .footertwo .footertwoxr p{
+    font-size: 14px;
+    margin-left: -20px;
+    text-align: justify;
+    text-align: left;
+}
+#footer .footerthree h5{
+    font-size: 16px;
+    padding: 30px 0px;
+}
+#footer .footerthree .footerthreex img{
+    display: inline-block;
+    margin: 10px 0px;
+    width: 100%;
+}
+#footer .footerfour h5{
+    font-size: 16px;
+    padding: 30px 0px;
+}
+#footer .footerfour .footertext{
+    font-size: 14px;
+    padding: 20px 0px ;
+}
+#footer .footerfour .footerfourimg{
+    font-size: 14px;
+    padding: 20px 0px ;
+    cursor: pointer;
+    color: #e23e38;
+}
+#footer .footerfour .footerfourimg:hover{
+  color: var(--threecouler);
+  
+}
+#footer .footerfour ul li{
+    display: inline-block;
+ 
+    margin-top: 50px;
+}
+#footer .footerfour ul li span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+ border: 1px solid var(--threecouler);
+ cursor: pointer;
+}
+#footer .footerfour ul li span:hover{
+    background-color: var(--secondarycouler);
+    border: none;
+  color: var(--threecouler);
+}
+
+/* footer section end hear */
